@@ -2,9 +2,9 @@ from itertools import combinations_with_replacement
 import string
 import random
 
-position = 0
+position = 0 #progression meter
 negative_key = {} #referencable positive/negative lists 
-positive_key = {}
+positive_key = {} #modifiable
 random_hex = {}
 random_list = []
 
@@ -25,7 +25,7 @@ while position == 3:
     negative_key[x] = random.randint(1, 2)
     positive_key[x] = random.randint(1, 2)   
     
-sequence = [string.ascii_letters.lowercase(), 0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+sequence = [string.ascii_letters.lowercase(), 0, 1, 2, 3, 4, 5, 6, 7, 8, 9] #set for final hex patern
 comb = combinations_with_replacement(sequence, 3260)
 list = [' '. join(x) for x in sequence if x < 3260]
 for x in range(1, 366):
