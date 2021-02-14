@@ -6,13 +6,13 @@ from itertools import combinations_with_replacement
 class Indent: #p-h-w-s-v
   def __init__(self, p, v, s, w, h):
     self.p = p
-    self.v = v
+    self.v = v # each layer is reversably set
     self.s = s  
     self.w = w
     self.h = h
 
   def h_shuffle(self): #instantiate under
-    if len(datescript.random_hex[datescript.random_list[datetime.now().timetuple().tm_yday]]) < 3260:
+    if len(datescript.random_hex[datescript.random_list[datetime.now().timetuple().tm_yday]]) < 3260: 
       try: 
         self.h = datescript.random_hex[datescript.random_list[datetime.now().timetuple().tm_yday]]] 
       except: 
