@@ -65,12 +65,12 @@ class Indent: #p-h-w-s-v
   def w_shuffle(self):
     if (self.w + datescript.postive_key[datetime.now().timetuple().tm_yday]) <= 4:
       datescript.position = 4
-      try: 
+      try: #reset current indent with negative key
         self.w += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
         pass 
     else: 
-      try: #reset current indent
+      try: #reset current indent with positive key
         self.w -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
       except:
         return False 
