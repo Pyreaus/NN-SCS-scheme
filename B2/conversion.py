@@ -8,7 +8,7 @@ with open("/filepath/input.txt", "rb") as p_text: #input.txt represents input (u
   bin_c = ' '.join(format(ord(chr), 'b') for chr in p_text)
 
 def str_conv(remover): #i=1 & o=0 after converting to binary
-  for x in remover:
+  for x in remover: #iterating over text to swap characters 
     if x == 1:
       r_char += 'i'
     elif x == 0:
