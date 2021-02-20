@@ -39,12 +39,12 @@ class Indent: #p-h-w-s-v
   def v_shuffle(self):
     if (self.v + datescript.postive_key[datetime.now().timetuple().tm_yday]) <= 32:
       datescript.position = 2
-      try: 
+      try: #reset current indent with negative key
         self.v += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
         pass 
     else: 
-      try: 
+      try: #reset current indent with positive key
         self.v -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
       except:
         return False 
@@ -52,12 +52,12 @@ class Indent: #p-h-w-s-v
   def s_shuffle(self):
     if (self.s + datescript.postive_key[datetime.now().timetuple().tm_yday]) <= 5:
       datescript.position = 3
-      try: 
+      try: #reset current indent with negative key
         self.s += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
         pass 
     else: 
-      try: 
+      try: #reset current indent with positive key
         self.s -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
       except:
         return False 
