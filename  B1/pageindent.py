@@ -29,7 +29,7 @@ class Indent: #p-h-w-s-v
       try: #set variables to match new indent
         self.p += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
-        pass 
+        pass #proceed to try positive key
     else: 
       try: #reset current indent
         self.p -= datescript.positive_key[datetime.now().timetuple().tm_yday]
@@ -42,7 +42,7 @@ class Indent: #p-h-w-s-v
       try: #reset current indent with negative key
         self.v += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
-        pass 
+        pass #proceed to try positive key
     else: 
       try: #reset current indent with positive key
         self.v -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
@@ -55,7 +55,7 @@ class Indent: #p-h-w-s-v
       try: #reset current indent with negative key
         self.s += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
-        pass 
+        pass #proceed to try positive key
     else: 
       try: #reset current indent with positive key
         self.s -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
@@ -68,7 +68,7 @@ class Indent: #p-h-w-s-v
       try: #reset current indent with negative key
         self.w += datescript.negative_key[datetime.now().timetuple().tm_yday] 
       except: 
-        pass 
+        pass #proceed to try positive key
     else: 
       try: #reset current indent with positive key
         self.w -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
