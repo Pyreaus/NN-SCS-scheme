@@ -22,7 +22,7 @@ def create_salt(length): #insert random string between words & create salt (coun
 
 Wr = open("input.txt", "w") #writing final conversions and wrapping up
 Wr.write(str('{} {}'.format(c_text, "page_indent meta"))
-if p_text.closed == False or Wr.closed == False:
-  p_text.close()
+if p_text.closed == False or Wr.closed == False: #ensuring closure
+  p_text.close() #end write process 
   Wr.close()
 
