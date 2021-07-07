@@ -2,7 +2,7 @@
 
 ![SCS Flow](https://user-images.githubusercontent.com/63919494/117139606-59564580-ada4-11eb-9de8-125923daa191.png)
 
-## This repository consists of several esoteric scripts pertaining to the NCS/SCS scheme 
+## This repository consists of several esoteric scripts for use in the scheme 
 
 `plaint text` -> `salt` -> `nn alg applied` -> `indent (PI)` --[transmit]-- `indent reversed` -> `nn alg applied`
 - Conceptual PI replication is feasible for smaller messages, ergo salt. 
