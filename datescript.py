@@ -35,7 +35,7 @@ for x in range(1, 366): #appending unique hex for each day of the year
     temp = random.choice(list)                #| prior to setting random_hex entries
   random_hex[x] = temp                        #|
 for x in range(1, 366):                       
-  random_list.append(random.randint(1, 1631)  # creating reference point for iteration
+  random_list.append(random.randint(1, 1631))  # creating reference point for iteration
 
 
 
