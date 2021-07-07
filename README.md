@@ -4,7 +4,7 @@
 
 ## This repository consists of several esoteric scripts pertaining to the NCS/SCS scheme 
 
-`plaint text` -> `salt` -> `nn alg applied` -> `page indent (PI)` <->[transmit]<-> `nn alg reversed`
+`plaint text` -> `salt` -> `nn alg applied` -> `indent (PI)` --[transmit]-- `indent reversed` -> `nn alg applied`
 - Conceptual PI replication is feasible for smaller messages, ergo salt. 
 - Adversarial derivation of linear (nonstochastic) PI is possible.
 
