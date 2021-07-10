@@ -17,8 +17,9 @@ def str_conv(remover): #i=1 & o=0 after converting to binary
 def create_salt(length): #insert random string between words & create salt (counter)
     str_conv(bin_c) 
     letters = string.ascii_lowercase
+    n = [q for q in range(random.randint(1, 10)) if isinstance(q, int)] 
     for x in r_char: #appending chars
-      c_text += x + ''.join(random.choice(letters) for i in range(random.randint(1, 10)
+      c_text += (x + ''.join(random.choice(letters) + n) 
 
 Wr = open("input.txt", "w") #writing final conversions and wrapping up
 Wr.write(str('{} {}'.format(c_text, "page_indent meta"))
