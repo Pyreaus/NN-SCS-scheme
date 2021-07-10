@@ -74,7 +74,3 @@ class Indent: #p-h-w-s-v
         self.w -= datescript.positive_key[datetime.now().timetuple().tm_yday] 
       except:
         return False 
-
-
-
-     
